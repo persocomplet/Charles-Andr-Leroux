@@ -1,0 +1,84 @@
+
+.section.jaune {
+	display: block;
+	height: auto; 
+	min-height: 500px;
+	padding-top: 100px; 
+	padding-bottom: 60px;
+	background-color: #f2b919;
+	background-clip: border-box;
+}
+
+.section.noir {
+	padding-top: 622px;
+	padding-left: 490px;
+	background-color: #000; 
+}
+
+.section.rouge {
+	padding-top: 600px;
+	padding-left: 490px;
+	background-color: #ef2a24;
+}
+
+.heading { 
+	margin-left: 205px;
+	font-family: 'Nimbus sans becker pbla', sans-serif; 
+	color: #000;
+	font-size: 20px; 
+    line-height: 1%; 
+ }
+
+.Helvetica {
+	position: static;
+	margin: 3px 259px 0px 205px; 
+	padding-top: 40px;
+	padding-right: 0px;
+	padding-left: 0px; 
+	font-family: 'Nimbus sans becker pbla', sans-serif; 
+	color: #000; 
+	font-size: 80px; 
+	line-height: 1em; 
+}
+
+.text-block-1 {
+	margin-top: 20px; 
+	margin-right: 180px;
+	padding-left: 205px; 
+	padding-top: 0px; 
+	padding-right: 516px;
+	font-family: 'Nimbus sans becker pbla', sans-serif; 
+	color: #000; 
+	font-size: 30px; 
+
+}
+
+.paragraphe {
+	margin-top: 10px;
+	margin-left: 686px;
+	margin-right: 205px;
+	padding-top: 0px; 
+	padding-bottom: 10px;
+	padding-right: auto;
+	padding-left: auto; 
+	font-family: 'Nimbus sans becker pbla', sans-serif; 
+	color: #000;
+}
+
+.line {
+	display: block; 
+	height: 60px; 
+	max-height: 5px; 
+	margin-right: 228px; 
+	margin-left: 205px; 
+	padding-top: 0px; 
+	padding-right: 428px
+	border-radius:0px;
+	background-color: #000;
+}
+
+
+ @font-face {
+ 	font-family: 'Nimbus sans becker pbla'; 
+ 	src: url('fonts/Nimbus Sans Becker PBla Regular.otf') format('opentype');
+ }
