@@ -13,20 +13,28 @@ padding: 0;
 }
 
 .section.noir {
-	padding-top: 622px;
-	padding-left: 490px;
-	background-color: #000; 
+    display: block;
+	height: auto; 
+	min-height: 500px;
+	padding-top: 100px; 
+	padding-bottom: 60px;
+	background-color: black;
+	background-clip: border-box;
 }
 
 .section.rouge {
-	padding-top: 600px;
-	padding-left: 490px;
+    display: block;
+	height: auto; 
+	min-height: 500px;
+	padding-top: 100px; 
+	padding-bottom: 60px;
 	background-color: #ef2a24;
+	background-clip: border-box;
 }
 
 .heading { 
 	margin-left: 205px;
-	font-family: 'Nimbus sans becker pbla', sans-serif; 
+	font-family: 'Helvetica', sans-serif; 
 	color: #000;
 	font-size: 20px; 
     line-height: 1%; 
@@ -38,7 +46,8 @@ padding: 0;
 	padding-top: 40px;
 	padding-right: 0px;
 	padding-left: 0px; 
-	font-family: 'Nimbus sans becker pbla', sans-serif; 
+	font-family: 'Helvetica', sans-serif; 
+	font-weight : bold;
 	color: #000; 
 	font-size: 80px; 
 	line-height: 1em; 
@@ -50,8 +59,35 @@ padding: 0;
 	padding-left: 205px; 
 	padding-top: 0px; 
 	padding-right: 516px;
-	font-family: 'Nimbus sans becker pbla', sans-serif; 
+	font-family: 'Helvetica', sans-serif; 
+	font-weight : black;
 	color: #000; 
+	font-size: 30px; 
+
+}
+
+.text-block-2 {
+	margin-top: 20px; 
+	margin-right: 180px;
+	padding-left: 205px; 
+	padding-top: 0px; 
+	padding-right: 516px;
+	padding-bottom: 100px;
+	font-family: 'Helvetica', sans-serif; 
+	color: white; 
+	font-size: 30px; 
+
+}
+
+.text-block-3 {
+	margin-top: 20px; 
+	margin-right: 180px;
+	padding-left: 205px; 
+	padding-top: 0px; 
+	padding-right: 16px;
+	padding-bottom: 100px;
+	font-family: 'Helvetica', sans-serif; 
+	color: black; 
 	font-size: 30px; 
 
 }
@@ -64,7 +100,7 @@ padding: 0;
 	padding-bottom: 10px;
 	padding-right: auto;
 	padding-left: auto; 
-	font-family: 'Nimbus sans becker pbla', sans-serif; 
+	font-family: 'Helvetica', sans-serif, medium; 
 	color: #000;
 }
 
@@ -80,8 +116,44 @@ padding: 0;
 	background-color: #000;
 }
 
+.line-white {
+	display: block; 
+	height: 60px; 
+	max-height: 5px; 
+	margin-right: 228px; 
+	margin-left: 205px; 
+	padding-top: 0px; 
+	padding-right: 428px
+	border-radius:0px;
+	background-color: white;
+}
+
+.design { 
+	position: static;
+	margin: 3px 259px 0px 205px; 
+	padding-top: 40px;
+	padding-right: 0px;
+	padding-left: 0px; 
+	font-family: 'Helvetica', sans-serif, bold; 
+	color: white; 
+	font-size: 80px; 
+	line-height: 1em; 
+ }
+
+.croix{
+	margin-top: 0px; 
+	margin-right: 0px;
+	padding-left: 205px; 
+	padding-top: 0px; 
+	padding-right: 0px;
+	padding-bottom:0px;
+	font-family: 'Helvetica', sans-serif; 
+	font-weight : bold;
+	color: black; 
+	font-size: 1000px; 
+
+}
 
  @font-face {
- 	font-family: 'Nimbus sans becker pbla'; 
- 	src: url('fonts/Nimbus Sans Becker PBla Regular.otf') format('opentype');
+ 	font-family: 'Helvetica'; 
  }
