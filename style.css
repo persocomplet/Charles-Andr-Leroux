@@ -22,6 +22,39 @@ padding: 0;
 	background-clip: border-box;
 }
 
+.cercles {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: 330px;
+    transform: translate(200px); 
+	top: 30px;
+	left: 500px;
+	align-content: right;
+}
+.grand-cercle-blanc {
+	width: 150px;
+    height: 150px;
+	margin: 0;
+	border-radius: 50%;
+    background-color: #fff;
+}
+
+.grand-cercle-vert {
+	width: 150px;
+    height: 150px;
+	margin: 0;
+	border-radius: 50%;
+    background-color: #03b2a3;
+
+}
+.grand-cercle-vert:hover { 
+	background-color: #ef2a24;
+	border-radius: 10%;
+	transition: border-radius 0.2s, background 0.2s;
+
+ }
+
+
 .section.rouge {
     display: block;
 	height: auto; 
@@ -51,6 +84,7 @@ padding: 0;
 	color: #000; 
 	font-size: 80px; 
 	line-height: 1em; 
+	
 }
 
 .text-block-1 {
@@ -154,6 +188,8 @@ padding: 0;
 
 }
 
+
  @font-face {
  	font-family: 'Helvetica'; 
  }
+ 
