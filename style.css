@@ -30,7 +30,7 @@ padding: 0;
 	top: 30px;
 	left: 500px;
 	align-content: right;
-	animation: showup 7s infinite;
+	animation: slidein 7s, showup 7s infinite; 
 	animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -3s);
 }
@@ -42,14 +42,25 @@ padding: 0;
     background-color: #fff;
 }
 
+
+.grand-cercle-blanc:hover { 
+	background-color: #f2b919;
+	border-radius: 10%;
+	transition: border-radius 0.2s, background 0.2s;
+ }
+
 .grand-cercle-vert {
 	width: 150px;
     height: 150px;
 	margin: 0;
 	border-radius: 50%;
     background-color: #03b2a3;
+    animation: slidedown 7s, showup 7s infinite; 
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
 
 }
+
 .grand-cercle-vert:hover { 
 	background-color: #ef2a24;
 	border-radius: 10%;
@@ -87,7 +98,7 @@ padding: 0;
 	color: #000; 
 	font-size: 80px; 
 	line-height: 1em; 
-	
+
 }
 
 .text-block-1 {
@@ -113,7 +124,7 @@ padding: 0;
 	font-family: 'Helvetica', sans-serif; 
 	color: white; 
 	font-size: 30px; 
-	animation: showup 7s infinite;
+	animation: slidein 7s, showup 7s infinite; 
 	animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -3s);
 
@@ -132,6 +143,9 @@ padding: 0;
 	color: black; 
 	font-size: 25px; 
 	left: 300px;
+	animation: slidein 7s, showup 7s infinite; 
+	animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
 }
 
 .paragraphe {
@@ -180,9 +194,11 @@ padding: 0;
 	color: white; 
 	font-size: 80px; 
 	line-height: 1em; 
-	animation: showup 7s infinite;
+
+	animation: slidein 7s, showup 7s infinite; 
 	animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -3s);
+
  }
 
 #titre-tb3 {
@@ -192,6 +208,9 @@ padding: 0;
 	padding-left: -50px;
 	margin-top: 70px;
 	font-weight: bolder;
+	animation: slidein 7s, showup 7s infinite; 
+	animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
  }
 
  #titre2-tb3 {
@@ -201,6 +220,9 @@ padding: 0;
 	top: 50px;
 	padding-left: -50px;
 	font-weight: bold;
+	animation: slidein 7s, showup 7s infinite; 
+	animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
  }
 
  #cross {
@@ -300,20 +322,22 @@ padding: 0;
 }
 
 @keyframes slidein {
-    0% { margin-left:-800px; }
-    20% { margin-left:-800px; }
-    35% { margin-left:0px; }
-    100% { margin-left:0px; }
+   to { 
+   transform: translateX(100px);
+    }
 }
 
-@keyframes reveal {
-    0% {opacity:0;width:0px;}
-    20% {opacity:1;width:0px;}
-    30% {width:355px;}
-    80% {opacity:1;}
-    100% {opacity:0;width:355px;}
+@keyframes slideup {
+   to { 
+   transform: translateY(150px);
+    }
 }
 
+@keyframes slidedown {
+   to { 
+   transform: translateY(-150px);
+    }
+}
  @font-face {
  	font-family: 'Helvetica'; 
  }
