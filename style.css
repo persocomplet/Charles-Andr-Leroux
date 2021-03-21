@@ -12,6 +12,89 @@ padding: 0;
 	background-clip: border-box;
 }
 
+.inner{
+		max-width: 76vw;
+		padding: 3vw;
+		margin: 0 auto;
+		transform: scale(0.7,0.7);
+		position: absolute;
+		left: 17vw;
+        top: 30vw;
+        animation:  showup 4s infinite; 
+		animation-play-state: paused;
+    	animation-delay: calc(var(--scroll) * -3s);
+	}
+	
+	h1{
+		font-size: 9vw;
+		line-height: 75%;
+		margin: 0;
+		font-weight: bold;
+	}
+	
+	.rotatedtext h2{
+		font-size: 40px;
+		font-family: 'Helvetica';
+		clear: both;
+		margin: 0;
+		padding: 0;
+		line-height: 130%;
+	}
+	
+	.border h2{
+		padding-bottom: 2px;
+	}
+	
+	h3{
+		font-size: 1vw;
+		font-weight: 200;
+		margin: 0 auto; 
+		width: 100%;
+		line-height: 100%;
+		opacity: .8;
+	}
+
+	.rotatedtext{
+		position: relative; 
+		font-family: 'Helvetica';
+		width: 50%; 
+		height: 34vw; 
+		-moz-transform:rotate(45deg); 
+		transform:rotate(45deg); 
+		-webkit-transform:rotate(45deg); 
+		float: left;"
+	}
+	
+	.name{
+		-webkit-transform:rotate(-90deg); 
+		position: absolute; 
+		left: 5.3vw; 
+		top: 1.8vw;
+		float: left;
+	}
+	
+	.name h2{
+		margin-top: 1.2vw; 
+		color: black;
+	}
+
+	.role{
+		-webkit-transform:rotate(0); 
+		position: absolute; 
+		top: 27vw;
+	}
+	
+	.job{
+		animation: pulse 5s infinite;
+		margin-top: -1.2vw;
+	}
+	
+	.co{
+		font-size: 80px; 
+		text-align: center; 
+		margin-top: 1.2vw;
+	}
+
 .section.noir {
     display: block;
 	height: auto; 
@@ -93,7 +176,7 @@ padding: 0;
 	padding-top: 40px;
 	padding-right: 3vw;
 	padding-left: 0vw; 
-	font-family: 'Helvetica', sans-serif; 
+	font-family: 'Helvetica', sans-serif, BOLD; 
 	font-weight : bold;
 	color: #000; 
 	font-size: 4.7vw; 
@@ -130,7 +213,7 @@ padding: 0;
 	font-family: 'Helvetica', sans-serif; 
 	color: white; 
 	font-size: 1.5vw; 
-	animation: slidein 7s, showup 7s infinite; 
+	animation: slidein 7s, showup 14s infinite; 
 	animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -3s);
 
@@ -156,15 +239,20 @@ padding: 0;
 
 .paragraphe {
 	margin-top: 0.5vw;
-	margin-left: 40vw;
+	margin-left: 45vw;
 	margin-right: 12vw;
 	padding-top: 0px; 
 	padding-bottom: 0.6vw;
 	padding-right: auto;
 	padding-left: auto; 
-	font-family: 'Helvetica', sans-serif, medium; 
-	font-size: 1.4vw;
+	font-family: 'Helvetica', sans-serif, light; 
+	font-size: 1.2vw;
 	color: #000;
+	text-align: justify;
+    text-justify: inter-word;
+    animation:  showup 7s infinite; 
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
 }
 
 .line {
@@ -202,7 +290,7 @@ padding: 0;
 	font-size: 5vw; 
 	line-height: 1em; 
 
-	animation: slidein 7s, showup 7s infinite; 
+	animation: slidein 7s, showup 14s infinite; 
 	animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -3s);
 
@@ -211,9 +299,7 @@ padding: 0;
 #titre-tb3 {
 	font-family: 'Helvetica', sans-serif; 
 	color: black; 
-	font-size: 50px;
-	padding-left: -50px;
-	margin-top: 70px;
+	font-size:  2.5vw;
 	font-weight: bolder;
 	animation: slidein 7s, showup 7s infinite; 
 	animation-play-state: paused;
@@ -223,15 +309,43 @@ padding: 0;
  #titre2-tb3 {
 	font-family: 'Helvetica', sans-serif; 
 	color: #fff; 
-	font-size: 20px;
-	top: 50px;
-	padding-left: -50px;
+	font-size: 1.5vw;
+	margin: 0;
 	font-weight: bold;
 	animation: slidein 7s, showup 7s infinite; 
 	animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -3s);
  }
 
+ .paragraphe3 {
+	margin-top: 0.5vw;
+	margin-left: 15vw;
+	margin-right: 12vw;
+	padding-top: 1vw; 
+	padding-bottom: 0.6vw;
+	padding-right: auto;
+	padding-left: auto; 
+	font-family: 'Helvetica', sans-serif, light; 
+	font-size: 1.5vw;
+	color: #000;
+	text-align: justify;
+    text-justify: inter-word;
+    animation: slidein 7s, showup 7s infinite; 
+	animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
+}
+
+ img {
+ 	width: 18vw;
+    height: 18vw;
+    margin: 0;
+ 	display: inline-block;
+ 	animation: rotate 1s linear infinite;
+ 	animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
+
+ }
+/*
  #cross {
 	background: #000;
 	height: 100px;
@@ -314,6 +428,7 @@ padding: 0;
     animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -1s);
   }
+  */
 
   @keyframes rotate {
   to {
@@ -334,6 +449,8 @@ padding: 0;
     }
 }
 
+
+
 @keyframes slideup {
    to { 
    transform: translateY(150px);
@@ -350,9 +467,14 @@ padding: 0;
  	
  }
  
-    @font-face {
-    font-family: 'Akzidenz Grotesk Black';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Akzidenz Grotesk Black'), url('Akzidenz-grotesk-black.woff') format('woff');
-    }
+	
+	
+	
+@keyframes pulse {
+	0% {
+	color: #001F3F;
+}
+	100% {
+	color: red;
+		}
+}
