@@ -173,6 +173,7 @@ padding: 0;
 	color: white; 
 	font-size: 80px; 
 	line-height: 1em; 
+	animation: showup 7s infinite;
  }
 
 #titre-tb3 {
@@ -201,7 +202,8 @@ padding: 0;
 	left: -50px;
 	top: 50px;
 	right: 500px;
-	transform: scale(3);
+	transform: scale(3); 
+
   }
 
   #cross:after {
@@ -212,6 +214,9 @@ padding: 0;
 	position: absolute;
 	top: 40px;
 	width: 100px;
+	animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
   }
 
   #cross-2 {
@@ -220,9 +225,14 @@ padding: 0;
 	position: relative;
 	width: 20px;
 	left: 700px;
-	 top: -50px;
-	 right: 100px;
-	 transform: scale(1);
+	top: -50px;
+	right: 100px;
+	transform: scale(1);
+
+	animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
+
   }
 
   #cross-2:after {
@@ -233,6 +243,10 @@ padding: 0;
 	position: absolute;
 	top: 40px;
 	width: 100px;
+
+	animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
   }
 
   #cross-3 {
@@ -244,6 +258,9 @@ padding: 0;
 	 right: 100px;
 	 transform: scale(1);
 	 margin-top: 100px;
+	animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
   }
   
   #cross-3:after {
@@ -254,7 +271,39 @@ padding: 0;
 	position: absolute;
 	top: 40px;
 	width: 100px;
+
+	animation: rotate 1s linear infinite;
+    animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -1s);
   }
+
+  @keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
 
  @font-face {
  	font-family: 'Helvetica'; 
