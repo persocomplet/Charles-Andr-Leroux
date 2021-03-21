@@ -25,18 +25,18 @@ padding: 0;
 .cercles {
 	display: flex;
 	flex-wrap: wrap;
-	margin-right: 330px;
-    transform: translate(200px); 
-	top: 30px;
-	left: 500px;
+	margin-right: 27vw;
+    transform: translate(17vw); 
+	top: 2.5vw;
+	left: 42vw;
 	align-content: right;
 	animation: slidein 7s, showup 7s infinite; 
 	animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -3s);
 }
 .grand-cercle-blanc {
-	width: 150px;
-    height: 150px;
+	width: 6vw;
+    height: 6vw;
 	margin: 0;
 	border-radius: 50%;
     background-color: #fff;
@@ -50,8 +50,8 @@ padding: 0;
  }
 
 .grand-cercle-vert {
-	width: 150px;
-    height: 150px;
+	width: 6vw;
+    height: 6vw;
 	margin: 0;
 	border-radius: 50%;
     background-color: #03b2a3;
@@ -89,41 +89,47 @@ padding: 0;
 
 .Helvetica {
 	position: static;
-	margin: 3px 259px 0px 205px; 
+	margin: 0.2vw 18vw 0vw 12vw; 
 	padding-top: 40px;
-	padding-right: 0px;
-	padding-left: 0px; 
+	padding-right: 3vw;
+	padding-left: 0vw; 
 	font-family: 'Helvetica', sans-serif; 
 	font-weight : bold;
 	color: #000; 
-	font-size: 80px; 
+	font-size: 4.7vw; 
 	line-height: 1em; 
+	animation: slidein 7s infinite; 
+	animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
 
 }
 
 .text-block-1 {
-	margin-top: 20px; 
-	margin-right: 180px;
-	padding-left: 205px; 
-	padding-top: 0px; 
-	padding-right: 516px;
+	margin-top: 1vw; 
+	margin-right: 10.7vw;
+	padding-left: 12vw; 
+	padding-top: 0vw; 
+	padding-right: 30.7vw;
 	font-family: 'Helvetica', sans-serif; 
 	font-weight : black;
 	color: #000; 
 	font-size: 30px; 
+	animation: slidein 7s infinite; 
+	animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
 
 }
 
 .text-block-2 {
-	margin-top: 20px; 
-	margin-right: 180px;
-	padding-left: 205px; 
+	margin-top: 1.2vw; 
+	margin-right: 10.7vw;
+	padding-left: 12.2vw; 
 	padding-top: 0px; 
-	padding-right: 516px;
+	padding-right: 30.7vw;
 	padding-bottom: 100px;
 	font-family: 'Helvetica', sans-serif; 
 	color: white; 
-	font-size: 30px; 
+	font-size: 1.5vw; 
 	animation: slidein 7s, showup 7s infinite; 
 	animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -3s);
@@ -149,50 +155,51 @@ padding: 0;
 }
 
 .paragraphe {
-	margin-top: 10px;
-	margin-left: 686px;
-	margin-right: 205px;
+	margin-top: 0.5vw;
+	margin-left: 40vw;
+	margin-right: 12vw;
 	padding-top: 0px; 
-	padding-bottom: 10px;
+	padding-bottom: 0.6vw;
 	padding-right: auto;
 	padding-left: auto; 
 	font-family: 'Helvetica', sans-serif, medium; 
+	font-size: 1.4vw;
 	color: #000;
 }
 
 .line {
 	display: block; 
-	height: 60px; 
-	max-height: 5px; 
-	margin-right: 228px; 
-	margin-left: 205px; 
-	padding-top: 0px; 
-	padding-right: 428px
-	border-radius:0px;
+	height: 3.5vw; 
+	max-height: 0.3vw; 
+	margin-right: 13.5vw; 
+	margin-left: 12.2vw; 
+	padding-top: 0vw; 
+	padding-right: 25.4vw;
+	border-radius:0vw;
 	background-color: #000;
 }
 
 .line-white {
 	display: block; 
-	height: 60px; 
-	max-height: 5px; 
-	margin-right: 228px; 
-	margin-left: 205px; 
-	padding-top: 0px; 
-	padding-right: 428px
-	border-radius:0px;
+	height: 3.5vw; 
+	max-height: 0.3vw; 
+	margin-right: 13.5vw; 
+	margin-left: 12.2vw; 
+	padding-top: 0vw; 
+	padding-right: 25.4vw;
+	border-radius:0vw;
 	background-color: white;
 }
 
 .design { 
 	position: static;
-	margin: 3px 259px 0px 205px; 
-	padding-top: 40px;
-	padding-right: 0px;
-	padding-left: 0px; 
+	margin: 1vw 0vw 0vw 12vw; 
+	padding-top: 4vw;
+	padding-right: 0vw;
+	padding-left: 0vw; 
 	font-family: 'Helvetica', sans-serif, bold; 
 	color: white; 
-	font-size: 80px; 
+	font-size: 5vw; 
 	line-height: 1em; 
 
 	animation: slidein 7s, showup 7s infinite; 
@@ -340,5 +347,12 @@ padding: 0;
 }
  @font-face {
  	font-family: 'Helvetica'; 
+ 	
  }
  
+    @font-face {
+    font-family: 'Akzidenz Grotesk Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Akzidenz Grotesk Black'), url('Akzidenz-grotesk-black.woff') format('woff');
+    }
