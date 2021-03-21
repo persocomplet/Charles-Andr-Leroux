@@ -30,6 +30,9 @@ padding: 0;
 	top: 30px;
 	left: 500px;
 	align-content: right;
+	animation: showup 7s infinite;
+	animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
 }
 .grand-cercle-blanc {
 	width: 150px;
@@ -110,6 +113,10 @@ padding: 0;
 	font-family: 'Helvetica', sans-serif; 
 	color: white; 
 	font-size: 30px; 
+	animation: showup 7s infinite;
+	animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
+
 
 }
 
@@ -174,6 +181,8 @@ padding: 0;
 	font-size: 80px; 
 	line-height: 1em; 
 	animation: showup 7s infinite;
+	animation-play-state: paused;
+    animation-delay: calc(var(--scroll) * -3s);
  }
 
 #titre-tb3 {
