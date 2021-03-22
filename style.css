@@ -173,7 +173,7 @@ padding: 0;
 .Helvetica {
 	position: static;
 	margin: 0.2vw 18vw 0vw 12vw; 
-	padding-top: 40px;
+	padding-top: 0px;
 	padding-right: 3vw;
 	padding-left: 0vw; 
 	font-family: 'Helvetica', sans-serif, BOLD; 
@@ -181,6 +181,37 @@ padding: 0;
 	color: #000; 
 	font-size: 4.7vw; 
 	line-height: 1em; 
+	animation: slidein 1s infinite alternate; 
+
+}
+
+.Helvetica.deux {
+	animation: slidein 1.5s infinite alternate; 
+}
+.Helvetica.trois {
+	animation: slidein 1.4s infinite alternate; 
+}
+.Helvetica.quatre {
+	animation: slidein 1.3s infinite alternate; 
+}
+.Helvetica.cinq {
+	animation: slidein 1.2s infinite alternate; 
+}
+.Helvetica.six {
+	animation: slidein 1s infinite alternate; 
+}
+.Helvetica:hover {
+	position: static;
+	margin: 0.2vw 18vw 0vw 12vw; 
+	padding-top: 0px;
+	padding-right: 3vw;
+	padding-left: 0vw; 
+	font-family: 'Helvetica', sans-serif, BOLD; 
+	font-weight : bold; 
+	font-size: 4.7vw; 
+	line-height: 1em;
+    -webkit-text-stroke: 2px black;
+    color: #f2b919;
 	animation: slidein 7s infinite; 
 	animation-play-state: paused;
     animation-delay: calc(var(--scroll) * -3s);
